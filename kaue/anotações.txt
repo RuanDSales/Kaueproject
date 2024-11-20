@@ -1,0 +1,29 @@
+#Header = onde fica logo (cabeçalho)
+    fica inserido no body
+
+<nav> = navegação
+<ul> = lista não ordenada
+<li> = List itens
+<a: = ancora
+
+
+
+#reset css
+margin = 0 (margem)
+padding = 0 (espaçamento interno)
+background-color Black (fundo)
+list-style = nome (estilização de listas)
+text-decoration = none (sublinhado dos links)
+
+
+
+#css
+height = (altura)
+display flex = 
+justify-content: space around (espaço, mantendo os nossos elementos separados)
+align-items: center (alinha ao centro)
+
+
+
+widht (largura)
+

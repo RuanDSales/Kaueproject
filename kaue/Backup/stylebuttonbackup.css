@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap'); 
+/* Importa a fonte "Kdam Thmor Pro" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+* {
+    margin: 0; /* Remove o espaço padrão em volta de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão dentro de todos os elementos */
+    list-style: none; /* Remove os marcadores de listas (bolinhas, números) */
+    text-decoration: none; /* Remove sublinhados de links */  
+    ;
+}
+
+body {
+    background: linear-gradient(to right, #5a7d1f, #8b6b3f);
+}
+
+header {
+    height: 90px; /* Define a altura do cabeçalho */
+    display: flex; /* Usa o sistema flexível para organizar o conteúdo do cabeçalho */
+    justify-content: space-around; /* Distribui o espaço igualmente entre os itens */
+    align-items: center; /* Alinha os itens ao centro na vertical */
+}
+
+nav {
+    width: 80%; /* Define a largura do menu de navegação */
+}
+
+ul {
+    display: flex; /* Usa o sistema flexível para organizar a lista */
+    width: 100%; /* Define a lista para ocupar 100% da largura do contêiner pai */
+    justify-content: space-between; /* Distribui os itens da lista igualmente */
+}
+
+li {
+    list-style: none; /* Remove os marcadores de lista (bolinhas, números) */
+    color: aliceblue; /* Define a cor do texto como azul claro */
+    cursor: pointer; /* Muda o cursor para "mãozinha" ao passar sobre o item */
+    font-size: 40px; /* Define o tamanho da fonte do texto */
+    transition: .5s; /* Adiciona uma transição suave de 0.5 segundos nas mudanças */
+    font-family: "Matemasie", sans-serif;
+}
+
+li:hover {
+    color: #d21617; /* Muda a cor do texto para vermelho ao passar o mouse */
+} 
+
+#logo {
+    width: 100px; /* Define a largura da imagem do logotipo */
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    background-position: 50% 50%;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    background: none;
+}
+
+form {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 10px 10px 5px 0px rgba(13, 13, 13, 0.75);
+    
+}
+   
+fieldset {
+    border: 3px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    border: 2px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 92px;
+    left: 29px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~.labelInput,
+.inputUser:valid ~.labelInput {
+    top: 80px;
+    font-size: 10px;
+    color: linear-gradient(to right, #8b6b3f, #5a7d1f);
+}
+
+#submit {
+    background-image: linear-gradient(to right, #8b6b3f, #5a7d1f);
+    width: 100%;
+    border: none;
+    padding: 7px;
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background: linear-gradient(to right, #70512e, #465f18);
+}
+
+footer {
+    width: 100%; /* Define a largura do container do footer */
+    height: 300px; /* Ajusta a altura do footer */
+    background-image: url('./midias/bannerfinal-removebg-preview.png'); /* Caminho da imagem */
+    background-size: 50%; /* Redimensiona a imagem para a largura do container */
+    background-position: center top; /* Centraliza a imagem na parte superior */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    display: flex; /* Utiliza flexbox para posicionamento */
+    flex-direction: column; /* Organiza itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: flex-end; /* Alinha o span ao final */
+    margin-top: 300px;     
+}
+
+    span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 10px;
+    margin: 0; /* Coloca o span ao final do container */
+    }
+
+
+    @media (max-width: 320px) {
+
+        #logo {
+            width: 10%;
+            position: relative;
+        }
+    
+        header {
+            padding: 1%; /* Adiciona padding para melhorar o espaçamento */
+        }
+    
+        nav {
+            width: 90%; /* O menu ocupa toda a largura */
+        }
+    
+        ul {
+            flex-direction: row; /* Alinha os itens verticalmente */
+            align-items: center; /* Centraliza os itens */
+            justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+        }
+    
+        li {
+            font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
+            padding: 0px; /* Adiciona espaçamento interno */
+        }
+    
+
+        form {
+            align-items: center;
+            margin-top: -200px;
+            width: 50%;
+        }
+
+        footer {
+            height: 200px; /* Reduz a altura em telas menores */
+            background-size: 70%; /* Ajusta o tamanho da imagem */
+        }
+        
+        span {
+            font-size: 8px; /* Ajusta o tamanho da fonte */
+        }
+    }
+    
+    @media (max-width: 768px) {
+
+        #logo {
+            width: 10%;
+            position: relative;
+        }
+    
+        header {
+            padding: 1%; /* Adiciona padding para melhorar o espaçamento */
+        }
+    
+        nav {
+            width: 90%; /* O menu ocupa toda a largura */
+        }
+    
+        ul {
+            flex-direction: row; /* Alinha os itens verticalmente */
+            align-items: center; /* Centraliza os itens */
+            justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+        }
+    
+        li {
+            font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
+            padding: 0px; /* Adiciona espaçamento interno */
+        }
+     
+        form {
+            align-items: center;
+            margin-top: -200px;
+            width: 50%;
+        }
+
+        footer {
+            height: 200px; /* Reduz a altura em telas menores */
+            background-size: 70%; /* Ajusta o tamanho da imagem */
+        }
+        
+        span {
+            font-size: 8px; /* Ajusta o tamanho da fonte */
+        }
+
+    }
+
+    
+    @media (max-width: 1024px) {
+        
+        #logo {
+            width: 10%;
+            position: relative;
+        }
+    
+        header {
+            padding: 1%; /* Adiciona padding para melhorar o espaçamento */
+        }
+    
+        nav {
+            width: 90%; /* O menu ocupa toda a largura */
+        }
+    
+        ul {
+            flex-direction: row; /* Alinha os itens verticalmente */
+            align-items: center; /* Centraliza os itens */
+            justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+        }
+    
+        li {
+            font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
+            padding: 0px; /* Adiciona espaçamento interno */
+        }
+    
+                
+        form {
+            align-items: center;
+            margin-top: 180px;
+            width: 53%;
+            position: relative;
+        }
+
+        .labelInput {
+            margin-left: 3px;
+        }
+        
+        .convidados {
+            font-size: 15px;
+        }
+        
+        footer {
+            height: 100px; /* Garante que a altura do footer se ajuste ao conteúdo */
+            padding: 0; /* Remove qualquer padding */
+            margin-top: -100px;
+        }
+    
+        span {
+            margin: 0; /* Garante que não há margem */
+            padding: 0; /* Remove qualquer padding no span */
+            font-size: 8px;
+            margin-bottom: -35px;
+        }
+    } 

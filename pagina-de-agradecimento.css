@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to right, #5a7d1f, #8b6b3f);
+    font-family: "Matemasie", sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.banner {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}   
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -500px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a.botao {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-family: "Patrick Hand", cursive;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+a.botao:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        margin: 50px 0 10px 0; /* Ajusta margens em telas menores */
+    }
+
+    a.botao {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-family: "Patrick Hand", cursive;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    footer {
+        height: auto; /* Ajusta a altura do footer */
+        padding: 20px; /* Adiciona padding */
+    }
+
+    span {
+        font-size: 10px; /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Reduz o tamanho do texto do título */
+    }
+
+    p {
+        font-size: 14px; /* Reduz o tamanho do texto do parágrafo */
+    }
+
+    a.botao {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-family: "Patrick Hand", cursive;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+}
